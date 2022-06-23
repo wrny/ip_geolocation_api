@@ -8,15 +8,11 @@ Here's what I did:
 2. Uploaded said database to a MySQL db on AWS RDS
 3. Wrote a simple Flask API to:
 
-	a. Accept IPv4 ip parameters via get request
-	
-	b. Confirm it's a valid IPv4 address
-	
-	c. Transform the IP address into decimal format which the database requires
-	
-	d. Fetch data from the SQL db via a MySQL query
-	
-	e. Return the data in a JSON format.  
+	a. Accept IPv4 ip parameters via get request \
+	b. Confirm it's a valid IPv4 address \
+	c. Transform the IP address into decimal format which the database requires \
+	d. Fetch data from the SQL db via a MySQL query \
+	e. Return the data in a JSON format. \
 
 example: 
 
@@ -82,23 +78,15 @@ Name the file: "aws_sql_db_credentials.txt"
 
 * You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE.
 
-server {
-
-&emsp; listen 80;
-
-&emsp;server_name YOUR_IP_ADDRESS_HERE;
-
-&emsp;location / {
-
-&emsp;&emsp;proxy_pass http://127.0.0.1:8000;
-
-&emsp;&emsp;proxy_set_header Host $host;
-
-&emsp;&emsp;proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-
-&emsp;}
-
-}
+>server { \
+>&emsp; listen 80; \
+>&emsp;server_name YOUR_IP_ADDRESS_HERE; \
+>&emsp;location / { \
+>&emsp;&emsp;proxy_pass http://127.0.0.1:8000; \
+>&emsp;&emsp;proxy_set_header Host $host; \
+>&emsp;&emsp;proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; \
+>&emsp;} \
+>}
 
 
 `sudo unlink /etc/nginx/sites-enabled/default`
