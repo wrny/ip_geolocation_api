@@ -46,15 +46,25 @@ A video of the tool used in action is below:
 **In the instance (access via SSH, Remina, PuTTY, etc.)**
 
 `sudo apt update`
+
 `sudo apt upgrade`
+
 `sudo git clone https://www.github.com/wrny/ip_geolocation_api`
+
 `cd ip_geolocation_api`
+
 `sudo apt-get install python3.8-venv`
+
 `sudo apt-get install python3-pip`
+
 `sudo python3 -m venv venv`
+
 `source venv/bin/activate`
+
 `sudo pip3 install -r requirements.txt`
+
 `sudo pip3 install gunicorn`
+
 `pkill gunicorn`
 
 Create a text document containing a dictionary with your AWS credentials. The real keys and fake values are below.
@@ -67,6 +77,7 @@ Name the file: "aws_sql_db_credentials.txt"
 **Setting up NGINX**
 
 `sudo apt install nginx`
+
 `sudo nano /etc/nginx/sites-enabled/ip_geolocation_api`
 
 * You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE.
@@ -83,11 +94,13 @@ Name the file: "aws_sql_db_credentials.txt"
 
 
 `sudo unlink /etc/nginx/sites-enabled/default`
+
 `sudo nginx -s reload`
 
 **Activate the API**
 
 `tmux`
+
 `gunicorn -b 0.0.0.0:8000 main:app`
 
 And it's done.
