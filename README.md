@@ -83,13 +83,21 @@ Name the file: "aws_sql_db_credentials.txt"
 * You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE.
 
 server {
+
 &emsp; listen 80;
+
 &emsp;server_name YOUR_IP_ADDRESS_HERE;
+
 &emsp;location / {
+
 &emsp;&emsp;proxy_pass http://127.0.0.1:8000;
+
 &emsp;&emsp;proxy_set_header Host $host;
+
 &emsp;&emsp;proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
 &emsp;}
+
 }
 
 
