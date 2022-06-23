@@ -12,7 +12,7 @@ Here's what I did:
 	b. Confirm it's a valid IPv4 address \
 	c. Transform the IP address into decimal format which the database requires \
 	d. Fetch data from the SQL db via a MySQL query \
-	e. Return the data in a JSON format. \
+	e. Return the data in a JSON format.
 
 example: 
 
