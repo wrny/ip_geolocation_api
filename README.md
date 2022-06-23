@@ -67,10 +67,10 @@ Name the file: "aws_sql_db_credentials.txt"
 `sudo apt install nginx` \
 `sudo nano /etc/nginx/sites-enabled/ip_geolocation_api`
 
-* You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE.
+* You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE. Formatting now: unless you have four space where the tabs are (and eight spaces where two tabs are) NGINX won't start properly.
 
 >server { \
->&emsp; listen 80; \
+>&emsp;listen 80; \
 >&emsp;server_name YOUR_IP_ADDRESS_HERE; \
 >&emsp;location / { \
 >&emsp;&emsp;proxy_pass http://127.0.0.1:8000; \
