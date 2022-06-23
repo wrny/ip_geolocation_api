@@ -82,7 +82,7 @@ Name the file: "aws_sql_db_credentials.txt"
 
 * You'll get a blank file. Paste what's below with the proper IP address where it reads YOUR_IP_ADDRESS_HERE.
 
-> server {
+server {
 &emsp; listen 80;
 &emsp;server_name YOUR_IP_ADDRESS_HERE;
 &emsp;location / {
