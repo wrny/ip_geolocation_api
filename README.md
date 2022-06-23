@@ -24,7 +24,7 @@ result:
 
 `{'ip': '18.116.242.146', 'country_code': 'US', 'country_name': 'United States of America', 'region': 'Ohio', 'city': 'Columbus', 'isp': 'Amazon Technologies Inc.'} `
 
-Average response times are between 0.05 - 0.10 seconds (thtat's 1/20th - 1/10th of a second), which is better than most any paid IP API. 
+Average response times are between 0.05 - 0.10 seconds (thtat's 1/20th - 1/10th of a second), which is better than most paid IP API providers. The heavier the load the API is under, the slower the response time gets, but that just means I would have to upgrade the EC2 instance or the MySQL database.
 
 The API itself resides on a standard Ubuntu 20.04 instance on AWS EC2, running Gunicorn and NGINX. 
 
