@@ -9,9 +9,13 @@ Here's what I did:
 3. Wrote a simple Flask API to:
 
 	a. Accept IPv4 ip parameters via get request
+	
 	b. Confirm it's a valid IPv4 address
+	
 	c. Transform the IP address into decimal format which the database requires
+	
 	d. Fetch data from the SQL db via a MySQL query
+	
 	e. Return the data in a JSON format.  
 
 example: 
