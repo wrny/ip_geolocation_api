@@ -1,5 +1,7 @@
 # Python IP Geolocation API (built with Flask + MySQL)
 
+![IP Geolocation API ](https://github.com/wrny/ip_geolocation_api/blob/main/ip_geolocation_api_example.png?raw=true "IP Geolocation API Example")
+
 Most web services use a visitor's IP address to determine geographic location. Want to know one user's location based on their IP? A one-off search https://whatismyipaddress.com/ip-lookup can work.  But to collect thousands of locations, you need an IP API service. There are dozens of them, and nearly all require monthly SaaS fees and will limit the number of queries you can do. I used to pay for these services and like a lot of SaaS companies, they were generally expensive and terrible. Free services do exist, but it's unwise to depend on them. This code provides a light, performant and low-cost alternative. 
 
 Here's what I did:
