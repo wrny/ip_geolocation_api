@@ -88,7 +88,7 @@ def get_ip_dict(ip):
         # mysql.connector returns database as a list of tuples 
         # with one tuple for each row.
         values = list(data[0]) 
-        values = [ip] + values
+        values = [ip.strip()] + values
 
         isp_dict = dict(zip(keys, values))
         return isp_dict
