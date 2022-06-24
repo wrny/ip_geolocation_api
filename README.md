@@ -99,3 +99,5 @@ result should be:
 `{'ip': '18.116.242.146', 'country_code': 'US', 'country_name': 'United States of America', 'region': 'Ohio', 'city': 'Columbus', 'isp': 'Amazon Technologies Inc.'}`
 
 **Note**: I'm not looking to build a business off of this tool, because the database license does not permit it. This is solely an academic exercise. I'll will be taking down the live API at some point.
+
+**2022-06-24 Update**: The live API has been taken down and the data has been deleted from MySQL.
